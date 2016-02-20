@@ -47,11 +47,11 @@ jQuery( document ).ready(function( $ ) {
 						jQuery('#result').html(data).css('color', '#35cf76');
 					},
 					error: function() {
-						jQuery('#result').html('Sorry, an error occurred.').css('color', '#e74c3c');
+						jQuery('#result').html('Ops, algo de estranho aconteceu.').css('color', '#e74c3c');
 					}
 				});
 			}else{
-				jQuery('#result').html('Please enter an valid email address.').css('color', '#e74c3c');
+				jQuery('#result').html('Entre com um email válido.').css('color', '#e74c3c');
 			}
 			return false;
 		});
@@ -200,7 +200,7 @@ new stepsForm( theForm, {
 
 		// let's just simulate something...
 		var messageEl = theForm.querySelector( '.final-message' );
-		messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+		messageEl.innerHTML = 'Obrigado! Em breve entraremos em contato.';
 		classie.addClass( messageEl, 'show' );
 	}
 } );
