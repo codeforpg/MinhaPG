@@ -1,12 +1,12 @@
 <?php
-    $apiKey         = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-us9';
-    $listId         = 'xxxxxxxxxx';
+    $apiKey         = '9a13b072fe2b8be93fb02d40b8a5091a-us12';
+    $listId         = 'Geral';
     $double_optin   = false;
     $send_welcome   = false;
     $email_type     = 'html';
     $email          = $_POST['email'];
     //replace us2 with your actual datacenter
-    $submit_url = "http://us9.api.mailchimp.com/1.3/?method=listSubscribe";
+    $submit_url = "http://us12.api.mailchimp.com/1.3/?method=listSubscribe";
     $data = array(
         'email_address' => $email,
         'apikey'        => $apiKey,
@@ -27,6 +27,6 @@
     if ($data->error){
         echo $data->error;
     } else {
-        echo "Got it, you've been added to our email list.";
+        echo "\"Copy That!\" Você foi adicionado à nossa lista de e-mail.";
     }
 ?>
